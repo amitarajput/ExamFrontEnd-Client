@@ -1,0 +1,31 @@
+<mat-toolbar style="background-color: yellow">
+    <a routerLink="/" mat-icon-button aria-label="Menu">
+        <mat-icon>menu_book</mat-icon>
+    </a>
+    <span>Exam Net</span>
+
+    <!-- Spacer to push login/logout buttons to the right -->
+    <span class="spacer"></span>
+
+    <div class="toolbar-buttons">
+        <!-- Login button, visible only if user is not logged in -->
+        <button *ngIf="!login.isLoggedIn()" mat-raised-button routerLink="/login" class="toolbar-button btn-login">
+      Login
+    </button>
+
+        <!-- Register button, visible only if user is not logged in -->
+        <button *ngIf="!login.isLoggedIn()" mat-raised-button routerLink="/signup" class="toolbar-button btn-register">
+      Register
+    </button>
+
+        <!-- Username button, visible only if user is logged in -->
+        <button *ngIf="login.isLoggedIn()" mat-raised-button routerLink="/admin/profile" class="toolbar-button btn-username">
+      {{ login.getUser().username }}
+    </button>
+
+        <!-- Logout button, visible only if user is logged in -->
+        <button *ngIf="login.isLoggedIn()" mat-raised-button (click)="logout()" class="toolbar-button btn-logout">
+      Logout
+    </button>
+    </div>
+</mat-toolbar>

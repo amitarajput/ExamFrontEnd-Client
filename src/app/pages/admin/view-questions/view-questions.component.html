@@ -1,0 +1,56 @@
+<h3 class="mt20">Questions of {{qTitle}} </h3>
+
+<div class="bootstrap-wrapper">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="container text-center mt15">
+                <button [routerLink]="'/admin/add-question/' + qId + '/' + qTitle" mat-raised-button style="background-color: orange; color: black;">
+            Add Question
+        </button>
+            </div>
+            <mat-card *ngFor="let q of questions; let i = index" class="mt20">
+                <mat-card-content>
+                    <p>
+
+                        <b> Q{{ i + 1}})</b>
+                        <span class="mt20" [innerHTML]="q.content"></span>
+                    </p>
+
+                    <div class="containter-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><b>1)</b>{{q.option1}}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><b>2)</b>{{q.option2}}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><b>3)</b>{{q.option3}}</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><b>4)</b>{{q.option4}}</p>
+                            </div>
+
+                        </div>
+                        <mat-divider></mat-divider>
+                        <p class="mt20">
+                            <b>Correct Answer:</b> {{q.answer}}
+                        </p>
+                    </div>
+
+                </mat-card-content>
+
+                <mat-card-actions>
+                    <div class="container text-center mt15 mb10">
+                        <button mat-raised-button (click)='deleteQuestion(q.qid)' style="background-color: yellow; color: black;">Delete</button>
+                    </div>
+                    <div class="container text-center mt15 mb10">
+                        <button [routerLink]="'/admin/question/' +qId" mat-raised-button style="background-color: yellow; color: black;">Update</button>
+                    </div>
+
+                </mat-card-actions>
+            </mat-card>
+
+        </div>
+    </div>
+</div>

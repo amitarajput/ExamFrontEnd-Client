@@ -1,0 +1,27 @@
+.instruction-title {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.instruction-subtitle {
+    font-size: 1.5rem;
+    color: #6c757d;
+}
+
+.instruction-content h2 {
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.important-instructions li,
+.attempt-instructions li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.add-quiz-button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+}

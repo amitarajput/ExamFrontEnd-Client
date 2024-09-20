@@ -1,0 +1,42 @@
+<div class="bootstrap-wrapper">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <mat-card>
+                    <mat-card-header>
+                        <mat-card-title class="instruction-title">Read the instructions carefully</mat-card-title>
+                        <mat-card-subtitle class="instruction-subtitle">One Step more to go</mat-card-subtitle>
+                    </mat-card-header>
+                    <mat-card-content class="mr20 instruction-content">
+                        <h2>{{quiz.title}}</h2>
+                        <p>{{quiz.description}}</p>
+                        <mat-divider></mat-divider>
+                        <h2>Important Instructions</h2>
+                        <ul class="important-instructions">
+                            <li>This quiz is only for practice purposes.</li>
+                            <li>You have to submit the quiz within <b>{{quiz.numberOfQuestions*2}} Minutes.</b></li>
+                            <li>All questions are mandatory.</li>
+                            <li>There are <b>{{quiz.numberOfQuestions}} questions.</b></li>
+                            <li>Total Quiz is <b>{{quiz.maxMarks}} Marks.</b></li>
+                            <li>Each question carries <b>{{quiz.maxMarks/quiz.numberOfQuestions}} Marks.</b> No Negative markings for wrong answers.</li>
+                        </ul>
+                        <mat-divider></mat-divider>
+                        <h2>Attempting Quiz</h2>
+                        <ul class="attempt-instructions">
+                            <li>The time will start the moment you click the Start button.</li>
+                            <li>You cannot resume the quiz if interrupted due to any reason.</li>
+                            <li>Scroll down to move to the next question.</li>
+                        </ul>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <div class="container text-center mt20">
+                            <button (click)="startQuiz()" mat-raised-button class="add-quiz-button" style="background-color: yellow; color: black;">
+                                Start Quiz
+                            </button>
+                        </div>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+.instructions-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.instructions-list {
+    padding-left: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.quiz-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.question-card {
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.submit-button {
+    background-color: #3498db;
+    color: white;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.submit-button:hover {
+    background-color: #2980b9;
+}
+
+.progress-wrapper {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.mat-progress-bar {
+    height: 15px;
+    background-color: #2ecc71;
+}

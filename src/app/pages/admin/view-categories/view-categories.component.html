@@ -1,0 +1,26 @@
+<div class="category-container">
+    <mat-card-title class="title">Category Management</mat-card-title>
+
+    <mat-card-subtitle>Manage all categories in the system</mat-card-subtitle>
+    <mat-card class="mt10" *ngFor="let c of categories">
+        <mat-card-header class="d-flex align-items-center">
+            <mat-icon class="me-2">category</mat-icon>
+            <mat-card-title>{{ c.title }}</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+            <p>
+                <strong>Description:</strong> {{ c.description || "No description available" }}
+            </p>
+        </mat-card-content>
+    </mat-card>
+
+    <!-- Button to add a new category -->
+    <mat-card-actions>
+        <div class="container text-center mt20">
+            <button routerLink="/admin/add-category" mat-raised-button class="add-quiz-button" style="background-color: yellow; color: black;">
+                Add New Category
+            </button>
+        </div>
+    </mat-card-actions>
+</div>

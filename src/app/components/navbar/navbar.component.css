@@ -1,0 +1,56 @@
+/* Toolbar spacing */
+
+.spacer {
+    flex: 1;
+}
+
+
+/* Consistent button styling */
+
+.toolbar-buttons .toolbar-button {
+    background-color: yellow;
+    color: black;
+    margin-left: 10px;
+    /* Adds space between buttons */
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid black;
+    /* Optional border for more visibility */
+}
+
+
+/* Specific styles for Register and Logout buttons */
+
+.btn-register,
+.btn-logout {
+    background-color: orange;
+    color: black;
+}
+
+
+/* Hover effect for buttons */
+
+.toolbar-button:hover {
+    background-color: orange;
+    /* Optional hover effect for all buttons */
+    color: black;
+}
+
+
+/* Optional hover effect for Register and Logout buttons */
+
+.btn-register:hover,
+.btn-logout:hover {
+    background-color: darkorange;
+    /* Darker shade for hover effect */
+    color: black;
+}
+
+
+/* Adjust button sizes and appearance */
+
+.mat-raised-button {
+    text-transform: none;
+    /* Prevent button text from going uppercase */
+}

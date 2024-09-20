@@ -1,0 +1,60 @@
+.truncate {
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.example-header-image {
+    background-image: url('../../../../assets/quiz.png');
+    /* Set an image background */
+    background-size: cover;
+    /* Ensure the image covers the entire div */
+    background-position: center;
+    /* Center the background image */
+    border: 2px solid #ccc;
+    /* Optional border */
+}
+
+.actions-container {
+    display: flex;
+    gap: 10px;
+    /* Adds space between buttons */
+}
+
+
+/* Button styles for 'Max Marks' and 'Questions' */
+
+.max-marks-button,
+.questions-button {
+    color: black;
+    /* Text color for Max Marks and Questions buttons */
+    border-color: black;
+    /* Border color if using mat-stroked-button */
+}
+
+
+/* Other button styles */
+
+.view-button {
+    background-color: yellow;
+    color: black;
+}
+
+.attempts-button {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* Button sizes and appearance */
+
+.mat-raised-button,
+.mat-stroked-button {
+    text-transform: none;
+    /* Prevent button text from going uppercase */
+    font-weight: bold;
+    padding: 8px 16px;
+    font-size: 14px;
+}
